@@ -1,0 +1,24 @@
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    margin-top:6rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+
+.country {
+    color:darkmagenta;
+}
+
+@media screen and (max-width: 77rem) {
+    .container {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+}
