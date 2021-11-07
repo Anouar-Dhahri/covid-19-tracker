@@ -6,6 +6,7 @@ import styles from './Chart.module.css';
 function Chart(props) {
 
   const [data, setData] = useState({});
+  const name = "The World";
   
   useEffect(()=> {
     console.log(props.data);
@@ -54,11 +55,20 @@ function Chart(props) {
   return (
     <div className={styles.container}>
       <div>
-        <span className={styles.title}>Total Data in <span className={styles.country}>{data.country}</span></span>
+        <span className={styles.title}>Total Data in <span className={styles.country}>
+          {
+            props.data.hasOwnProperty('country') ? data.country : name
+          }
+          
+        </span></span>
         {barChart}
       </div>
       <div>
-        <span className={styles.title}>Data Per One Million in <span className={styles.country}>{data.country}</span></span>
+        <span className={styles.title}>Data Per One Million in <span className={styles.country}>
+          {
+            props.data.hasOwnProperty('country') ? data.country : name
+          }
+        </span></span>
         {polarChart}
       </div>
     </div>

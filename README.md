@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Screenshots
+
+![1](screenshots/1.png)
+
+### Live DEMO
+## [DEMO](https://sentinelcovid-19-tracker.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:

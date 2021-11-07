@@ -4,7 +4,7 @@ import cx from 'classnames';
 
 import styles from './CountryPicker.module.css';
 
-import flag from './../../assets/flag.png';
+import world from './../../assets/world.png';
 
 function CountryPicker({ handleCountryChange }) {
 
@@ -36,7 +36,7 @@ function CountryPicker({ handleCountryChange }) {
         Object.keys(country).length === 0 ? (
           <div className={styles.info}>
             <div className={cx(styles.row, styles.country)}>
-              <img src={flag} alt="flag" className={styles.flag}/>
+              <img src={world} alt="flag" className={styles.flag}/>
               <span className={styles.flag_title}></span>
             </div>
           
@@ -102,7 +102,7 @@ function CountryPicker({ handleCountryChange }) {
               getCountryData(e.target.value)
             }
           }>
-            <option value="">Global</option>
+            <option value="">Select a Country </option>
             {
               countries.map((item,idx) => (
                 <option value={item.country} key={idx}>
